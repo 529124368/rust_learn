@@ -15,7 +15,8 @@ fn test(num :i32) -> (i32, String){
     (flg,"sdfsf".to_string())
 }
 
-fn what(n :&String)->usize{
+fn what(n :&mut String)->usize{
+    n.push_str("asdasdsa");
     let len = n.len();
     len
 }
@@ -38,8 +39,8 @@ fn main() {
         println!("{}",a) 
     }
     //
-    let we = String::from("sdf");
-    let s =  what(&we);
+    let mut we = String::from("sdf");
+    let s =  what(&mut we);
     println!("{}",s);
     println!("{}",we);
     //
