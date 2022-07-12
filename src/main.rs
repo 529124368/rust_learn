@@ -21,6 +21,18 @@ fn what(n :&mut String)->usize{
     len
 }
 
+
+#[derive(Debug)]
+struct Aera {
+    width :u32,
+    height:u32,
+}
+impl Aera {
+    fn getarea(&self) ->u32 {
+        self.width*self.height
+    }
+}
+
 fn main() {
     const  FG : &str = "sfsdf";
     let he :u32 = "12".parse().expect("error");
@@ -43,10 +55,16 @@ fn main() {
     let s =  what(&mut we);
     println!("{}",s);
     println!("{}",we);
+
+
     //
-    let mut dfg = String::from("hello");
-    dfg.push_str(",world");
-    println!("{}",dfg);
+    let tinar = Aera{
+        width:12,
+        height:12,
+    };
+    print!("{}",tinar.getarea());
+    print!("{:#?}",tinar);
+    //
     let randnum = rand::thread_rng().gen_range(0,100);
     println!("现在随机数是:{}",randnum);
     loop {
