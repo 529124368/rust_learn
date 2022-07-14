@@ -1,9 +1,5 @@
-use rand::Rng;
-use std::cmp::Ordering;
 use std::collections::HashMap;
-use std::fs::File;
-use std::{io, string};
-
+mod asd;
 fn test(num: i32) -> (i32, String) {
     if num == 5 {
         println!("不错哦")
@@ -54,6 +50,7 @@ struct Ggg<T, U, V> {
 }
 
 fn main() {
+    asd::example::print_info();
     //File::open("sfsdf.txt").expect("找不到文件");
     let mut maps = HashMap::new();
     maps.insert("dongwu".to_string(), 123);
