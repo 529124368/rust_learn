@@ -3,3 +3,7 @@ pub mod example {
         println!("######################")
     }
 }
+
+pub fn ceshi() {
+    println!("sdfsf")
+}

@@ -1,5 +1,5 @@
-use std::collections::HashMap;
-mod asd;
+use std::{collections::HashMap, thread};
+mod tools;
 fn test(num: i32) -> (i32, String) {
     if num == 5 {
         println!("不错哦")
@@ -50,7 +50,8 @@ struct Ggg<T, U, V> {
 }
 
 fn main() {
-    asd::example::print_info();
+    tools::example::print_info();
+    tools::ceshi();
     //File::open("sfsdf.txt").expect("找不到文件");
     let mut maps = HashMap::new();
     maps.insert("dongwu".to_string(), 123);
