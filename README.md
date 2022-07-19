@@ -1,5 +1,5 @@
 # rust_learn
-学习RUST
+学习RUST 练习使用
 
 安装nightly版
 $ rustup toolchain install nightly
