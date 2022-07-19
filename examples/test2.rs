@@ -37,7 +37,7 @@ fn deal_stu(a: &Student) {
     println!("{}", a.name)
 }
 
-fn getMax<T: std::cmp::PartialOrd>(a: T, b: T) -> T {
+fn getMax<T: PartialOrd + Copy>(a: T, b: T) -> T {
     if a > b {
         return a;
     } else {

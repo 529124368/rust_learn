@@ -1,4 +1,4 @@
-use std::{collections::HashMap, thread};
+use std::collections::HashMap;
 mod tools;
 fn test(num: i32) -> (i32, String) {
     if num == 5 {
