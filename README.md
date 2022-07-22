@@ -7,3 +7,8 @@ $ rustup default nightly
 
 查看目前安装的所有组件
 rustup component list --installed
+
+rust 一些方法
+read exact 
+vecDeque
+
