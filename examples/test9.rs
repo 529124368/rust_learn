@@ -1,4 +1,9 @@
+use std::collections::HashMap;
+
 fn main() {
+    let mut a = HashMap::new();
+    a.insert("adasd", 12);
+    a.entry("ads");
     let mut p = Point::new();
     p.setX(123);
     p.setY(12);
