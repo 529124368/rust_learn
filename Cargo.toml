@@ -1,16 +1,17 @@
 [package]
+default-run = "hello"
+edition = "2021"
 name = "greeting"
 version = "0.1.0"
-edition = "2021"
-default-run="hello"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 md-5 = "0.10.1"
 rand = "0.3.5"
-testlib = {path ="./testlib"}
+testlib = {path = "./testlib"}
+tokio = {version = "1.20.1", features = ["full"]}
 
 [[bin]]
-name="hello"
-path="./src/hello.rs"
+name = "hello"
+path = "./src/hello.rs"

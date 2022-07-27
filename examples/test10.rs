@@ -1,10 +1,12 @@
 use core::time;
 use std::{
     ops::Deref,
+    rc::Rc,
     thread::{self, Thread},
 };
 
 fn main() {
+    let bb = Rc::new(23);
     let handle = thread::spawn(|| {
         for i in 0..100 {
             println!("线程运行中....{}", i);
