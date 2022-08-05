@@ -1,7 +1,6 @@
 use std::{collections::HashMap, vec};
 
 fn main() {
-    testlib::factorey::fac::prt();
     let a = Ip_address::v3("asdad".to_string());
     println!("{:#?}", a);
     let ss = "asdads";
