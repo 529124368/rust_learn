@@ -8,5 +8,6 @@ version = "0.1.0"
 proc-macro = true
 
 [dependencies]
+proc-macro2 = "1.0.43"
 quote = "*"
-syn = "*"
+syn = {version = "*", features = ["extra-traits"]}
