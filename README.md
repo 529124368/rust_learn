@@ -18,3 +18,5 @@ rust tokio 库
 
 https://rust-unofficial.github.io/too-many-lists/fourth-building.html
 
+cargo clippy 风格检查
+
