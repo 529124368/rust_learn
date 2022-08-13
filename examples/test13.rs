@@ -1,21 +1,18 @@
-// macro_rules! sqr {
-//     ($x:expr) => {{
-//         println!("sfdfd");
-//         $x * $x
-//     }};
-// }
+use lsz_macro::lszMacro;
 
-use zimu_macro::zimuMacro;
-
-#[derive(zimuMacro, Default)]
+#[derive(lszMacro, Default)]
 struct Test {
     name: String,
     sex: u8,
 }
-
 fn main() {
-    let s = Test::new();
+    let mut ss = Vec::new();
+    ss.push("a");
+    ss.push("b");
+    println!("{}", ss[1]);
+    let mut s = Test::new();
+    s.set_sex(12);
+    s.set_name("你好啊哦啊".to_string());
     println!("{}", s.get_name());
     println!("{}", s.get_sex());
-    // println!("{}", sqr!(1 + 1));
 }
