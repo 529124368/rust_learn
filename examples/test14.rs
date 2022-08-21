@@ -1,13 +1,18 @@
+use std::any::type_name;
+
 fn main() {
-    let mut s = "$%7fsdfs".to_string();
-    {
-        s = "a".to_string();
+    let asd = vec![12, 12, 23, 343, 4343];
+    let add = [12, 12, 23, 343, 4343];
+    let add = &add;
+    let asd = &asd;
+
+    if asd == add {
+        println!("sf")
     }
-    {
-        s = "s".to_string();
-    }
-    {
-        s = "d".to_string();
-    }
-    println!("{s}");
+    println!("{}", type_of(asd));
+    println!("{}", type_of(add));
+}
+
+fn type_of<T>(_: T) -> &'static str {
+    type_name::<T>()
 }
