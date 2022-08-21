@@ -3,12 +3,11 @@ use std::any::type_name;
 fn main() {
     let asd = vec![12, 12, 23, 343, 4343];
     let add = [12, 12, 23, 343, 4343];
-    let add = &add;
-    let asd = &asd;
+    // let add = &add;
+    // let asd = &asd;
 
-    if asd == add {
-        println!("sf")
-    }
+    assert_eq!(&asd, &add);
+
     println!("{}", type_of(asd));
     println!("{}", type_of(add));
 }
